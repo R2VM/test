@@ -26,6 +26,9 @@ public class SignInPageTest extends TestBase {
     public void SignInPageTitleTest() {
         String title = signInPage.validateSignInPageTitle();
         Assert.assertEquals(title, "My Store");
-
-    }
+            }
+            @Test
+            public void signintest(){
+            signInPage.setSignin(prop.getProperty("username"), prop.getProperty("password"));
+            }
 }
